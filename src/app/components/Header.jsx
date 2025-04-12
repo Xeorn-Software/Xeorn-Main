@@ -38,9 +38,6 @@ export default function Header() {
             <Link href="#features" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Features
             </Link>
-            <Link href="/learn" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Learn
-            </Link>
             <Link href="#testimonials" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Testimonials
             </Link>
@@ -74,12 +71,6 @@ export default function Header() {
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
             >
               Features
-            </Link>
-            <Link
-              href="/learn"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-            >
-              Learn
             </Link>
             <Link
               href="#testimonials"
@@ -120,4 +111,3 @@ export default function Header() {
     </header>
   )
 }
-
