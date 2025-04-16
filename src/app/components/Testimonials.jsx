@@ -9,22 +9,12 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-gray-50 overflow-hidden" id="testimonials">
+    <section className="bg-gray-50 dark:bg-gray-800 overflow-hidden" id="testimonials">
       <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
         <div className="relative lg:flex lg:items-center">
-          {/*Removed the following code for the avatar image:
-          <div className="hidden lg:block lg:flex-shrink-0">
-            <img
-              className="h-64 w-64 rounded-full xl:h-80 xl:w-80"
-              src={testimonials[0].image || "/placeholder.svg"}
-              alt=""
-            />
-          </div>
-          */}
-
           <div className="relative lg:ml-10">
             <svg
-              className="absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-indigo-200 opacity-50"
+              className="absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-indigo-200 dark:text-indigo-300 opacity-50"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 144 144"
@@ -36,19 +26,16 @@ export default function Testimonials() {
               />
             </svg>
             <blockquote className="relative">
-              <div className="text-2xl leading-9 font-medium text-gray-900">
+              <div className="text-2xl leading-9 font-medium text-gray-900 dark:text-white">
                 <p>&ldquo;{testimonials[0].quote}&rdquo;</p>
               </div>
               <footer className="mt-8">
                 <div className="flex">
-                  {/*Removed the following code for the mobile avatar image:
-                  <div className="flex-shrink-0 lg:hidden">
-                    <img className="h-12 w-12 rounded-full" src={testimonials[0].image || "/placeholder.svg"} alt="" />
-                  </div>
-                  */}
                   <div className="ml-4 lg:ml-0">
-                    <div className="text-base font-medium text-gray-900">{testimonials[0].name}</div>
-                    <div className="text-base font-medium text-indigo-600">{testimonials[0].role}</div>
+                    <div className="text-base font-medium text-gray-900 dark:text-white">{testimonials[0].name}</div>
+                    <div className="text-base font-medium text-indigo-600 dark:text-indigo-400">
+                      {testimonials[0].role}
+                    </div>
                   </div>
                 </div>
               </footer>
@@ -59,3 +46,4 @@ export default function Testimonials() {
     </section>
   )
 }
+
